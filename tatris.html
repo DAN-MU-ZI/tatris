@@ -35,7 +35,7 @@
         </div>
     </div>
     <script>
-        document.querySelector('body').style.backgroundColor='#161616'
+        document.querySelector('body').style.backgroundColor='#3E4550'
         var canvas = document.getElementById('tatris');
         var ctx = canvas.getContext('2d');
 
@@ -49,7 +49,7 @@
             [0xCC00, 0xCC00, 0xCC00, 0xCC00]  // 'O'
         ];
         
-        var colorList = ['#ff000d', '#2600ff', '#5eff00', '#fff200', '#ff00bf', '#ff0095', '#00ffff'];
+        var colorList = ['#1FBCD3', '#CBE2B4', '#F7BFA8', '#F6B6CA', '#9BD5BD', '#305BC4', '#F59D02'];
 
         var curShapeType = Math.floor(Math.random() * 7);//현재 테트리스 모양을 담을 변수
         var curRotation = 0;// 현재 테트리스 회전 모양을 담을 변수 (0, 1, 2, 3)
@@ -62,7 +62,7 @@
             gamePanelColor[z] = []; 
             for(var x = 0;x<10;x++){ 
                 gamePanel[z][x]=0; 
-                gamePanelColor[z][x] = '#161616'; 
+                gamePanelColor[z][x] = '#3E4550'; 
             } 
         }
 
@@ -79,10 +79,10 @@
         }
 
         function gamePanelDraw(){
-            ctx.fillStyle = '#161616';
+            ctx.fillStyle = '#3E4550';
 
             ctx.fillRect(0,0,200,400);
-            ctx.fillStyle = '#161616';
+            ctx.fillStyle = '#3E4550';
 
             for (var y = 0; y < gamePanel.length; y++) { 
                 for (var x = 0; x < gamePanel[y].length; x++) { 
