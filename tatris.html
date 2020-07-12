@@ -142,6 +142,14 @@
             
         $(document).keydown(function (event) {
             switch(event.keyCode){ 
+            /* case 13:
+                if(){
+
+                }else{
+
+                }
+                draw();
+                break; */
             case 37: 
                 if(!rowLeftCheck()){
                     sPos.x -=1;
@@ -150,6 +158,14 @@
                 }
                 draw();
                 break; 
+            case 38:
+                if(!checkAng(shapes[curShapeType][curRotation+1])){ 
+                    changeAng();
+                }else{
+
+                }
+                draw();
+                break;
             case 39:
                 if(!rowRightCheck()){
                     sPos.x +=1;
@@ -158,12 +174,62 @@
                 }
                 draw();
                 break;
-            case 38:
-                if(!checkAng(shapes[curShapeType][curRotation+1])){ 
-                    changeAng();
+            /* case 40: //아래로 한칸(Arrow down)
+                if(){
+
                 }else{
 
                 }
+                draw();
+                break; */
+            /* case 65: //바로 아래로(A)
+                if(){
+
+                }else{
+
+                }
+                draw();
+                break; */
+            /* case 68: //왼쪽으로 한칸(D)
+                if(){
+
+                }else{
+
+                }
+                draw();
+                break; */
+            /* case 70: //아래로 한칸(F)
+                if(){
+
+                }else{
+
+                }
+                draw();
+                break; */
+            /* case 71: //오른쪽으로 한칸(G)
+                if(){
+
+                }else{
+
+                }
+                draw();
+                break; */
+            /* case 82: //모양 변경(R)
+                if(){
+
+                }else{
+
+                }
+                draw();
+                break; */
+            /* case 85: //다시하기(U)
+                if(){
+
+                }else{
+
+                }
+                draw();
+                break; */
             case 32:
                 break; 
             default: 
