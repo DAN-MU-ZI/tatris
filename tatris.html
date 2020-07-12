@@ -142,7 +142,7 @@
             
         $(document).keydown(function (event) {
             switch(event.keyCode){ 
-            /* case 13:
+            /* case 13: //바로 아래로(Enter)
                 if(){
 
                 }else{
@@ -150,7 +150,7 @@
                 }
                 draw();
                 break; */
-            case 37: 
+            case 37: //왼쪽으로 한칸(Arrow left)
                 if(!rowLeftCheck()){
                     sPos.x -=1;
                 }else{
@@ -158,7 +158,7 @@
                 }
                 draw();
                 break; 
-            case 38:
+            case 38: //모양 변경(Arrow up)
                 if(!checkAng(shapes[curShapeType][curRotation+1])){ 
                     changeAng();
                 }else{
@@ -166,7 +166,7 @@
                 }
                 draw();
                 break;
-            case 39:
+            case 39: //오른쪽으로 한칸(Arrow rigth)
                 if(!rowRightCheck()){
                     sPos.x +=1;
                 }else{
